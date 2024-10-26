@@ -37,6 +37,6 @@
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/elfonochasis/Sistema-Hitos-Foundry-VTT",
   "manifest": "https://raw.githubusercontent.com/fabhianArkantos/Sistema-Hitos-Foundry-VTT/1-fix-names-and-rolls/system.json",
-  "download": "https://github.com/fabhianArkantos/Sistema-Hitos-Foundry-VTT/archive/refs/tags/1-fix-names-and-rolls.zip",
+  "download": "https://github.com/fabhianArkantos/Sistema-Hitos-Foundry-VTT/archive/refs/heads/1-fix-names-and-rolls.zip",
   "license": "LICENSE.txt"
 }
