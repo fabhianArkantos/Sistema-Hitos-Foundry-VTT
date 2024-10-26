@@ -194,7 +194,7 @@ export async function _onCheckRoll(actor, valor, habilidadNombre) {
 }
 
 function _rolld10(valor) {
-    let d10Roll = new Roll("1d10+1d10+1d10").roll({async: false});
+    let d10Roll = new Roll("1d10+1d10+1d10").evaluateSync();
     let d10s = d10Roll.result.split(" + ").sort((a, b) => a - b);
     let result = Number(d10s[1]) + Number(valor);
     return [d10Roll, d10s, result];
