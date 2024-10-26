@@ -38,11 +38,11 @@
       },
       "salud": {
         "aguante": {
-          "label": "Hitos.Aguante",
+          "label": "Aguante",
           "value": ""
         },
         "resistencia": {
-          "label": "Hitos.HP",
+          "label": "HP",
           "value": 0,
           "max": 15,
           "min": 0,
@@ -56,7 +56,7 @@
       },
       "cordura": {
         "estabilidadMental": {
-          "label": "Hitos.MP",
+          "label": "MP",
           "value": 0,
           "max": 15,
           "min": 0,
@@ -69,7 +69,7 @@
           }
         },
         "entereza": {
-          "label": "Hitos.Entereza",
+          "label": "Entereza",
           "value": ""
         },
         "transtornos": {
@@ -102,7 +102,7 @@
       "caracteristicas": {
         "atributos": {
           "for": {
-            "label": "Hitos.FOR",
+            "label": "FOR",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -110,7 +110,7 @@
             "spent": false
           },
           "ref": {
-            "label": "Hitos.REF",
+            "label": "REF",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -118,7 +118,7 @@
             "spent": false
           },
           "vol": {
-            "label": "Hitos.VOL",
+            "label": "VOL",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -126,7 +126,7 @@
             "spent": false
           },
           "int": {
-            "label": "Hitos.INT",
+            "label": "INT",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -136,7 +136,7 @@
         },
         "habilidades": {
           "ffisica": {
-            "label": "Hitos.FFisica",
+            "label": "FFisica",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -146,7 +146,7 @@
             "gameModule": "core"
           },
           "combate": {
-            "label": "Hitos.Combate",
+            "label": "Combate",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -156,7 +156,7 @@
             "gameModule": "core"
           },
           "interaccion": {
-            "label": "Hitos.Interaccion",
+            "label": "Interaccion",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -166,7 +166,7 @@
             "gameModule": "core"
           },
           "percepcion": {
-            "label": "Hitos.Percepcion",
+            "label": "Percepcion",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -176,7 +176,7 @@
             "gameModule": "core"
           },
           "subterfugio": {
-            "label": "Hitos.Subterfugio",
+            "label": "Subterfugio",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -186,7 +186,7 @@
             "gameModule": "core"
           },
           "cultura": {
-            "label": "Hitos.Cultura",
+            "label": "Cultura",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -196,7 +196,7 @@
             "gameModule": "core"
           },
           "profesion": {
-            "label": "Hitos.Profesion",
+            "label": "Profesion",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -206,7 +206,7 @@
             "gameModule": "core"
           },
           "psiquico": {
-            "label": "Hitos.Psiquico",
+            "label": "Psiquico",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -216,7 +216,7 @@
             "gameModule": "cultos"
           },
           "ocultismo": {
-            "label": "Hitos.Ocultismo",
+            "label": "Ocultismo",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -226,7 +226,7 @@
             "gameModule": "cultos"
           },
           "brujeria": {
-            "label": "Hitos.Brujeria",
+            "label": "Brujeria",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -236,7 +236,7 @@
             "gameModule": "cultos"
           },
           "arcanas": {
-            "label": "Hitos.Arcanas",
+            "label": "Arcanas",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -246,7 +246,7 @@
             "gameModule": "cultos"
           },
           "tempodinamica": {
-            "label": "Hitos.Tempodinamica",
+            "label": "Tempodinamica",
             "concept": "",
             "value": 0,
             "min": 0,
@@ -318,7 +318,7 @@
       "templates": ["bio", "hitos","adicional"],
       "atributos": {
         "est": {
-          "label": "Hitos.EST",
+          "label": "EST",
           "concept": "",
           "value": 0,
           "min": 0,
@@ -326,7 +326,7 @@
           "spent": false
         },
         "tam": {
-          "label": "Hitos.TAM",
+          "label": "TAM",
           "concept": "",
           "value": 0,
           "min": 0,
@@ -334,7 +334,7 @@
           "spent": false
         },
         "man": {
-          "label": "Hitos.MAN",
+          "label": "MAN",
           "concept": "",
           "value": 0,
           "min": 0,
@@ -342,7 +342,7 @@
           "spent": false
         },
         "tec": {
-          "label": "Hitos.TEC",
+          "label": "TEC",
           "concept": "",
           "value": 0,
           "min": 0,
@@ -365,7 +365,7 @@
       "motivacion": "",
       "atributos": {
         "rec": {
-          "label": "Hitos.REC",
+          "label": "REC",
           "concept": "",
           "value": 0,
           "min": 0,
@@ -373,7 +373,7 @@
           "spent": false
         },
         "inf": {
-          "label": "Hitos.INF",
+          "label": "INF",
           "concept": "",
           "value": 0,
           "min": 0,
@@ -381,7 +381,7 @@
           "spent": false
         },
         "pod": {
-          "label": "Hitos.POD",
+          "label": "POD",
           "concept": "",
           "value": 0,
           "min": 0,
@@ -389,7 +389,7 @@
           "spent": false
         },
         "tam": {
-          "label": "Hitos.TAM",
+          "label": "TAM",
           "concept": "",
           "value": 0,
           "min": 0,
