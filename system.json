@@ -36,7 +36,7 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/elfonochasis/Sistema-Hitos-Foundry-VTT",
-  "manifest": "https://raw.githubusercontent.com/fabhianArkantos/Sistema-Hitos-Foundry-VTT/main/system.json",
-  "download": "https://github.com/fabhianArkantos/Sistema-Hitos-Foundry-VTT/archive/refs/tags/dev.zip",
+  "manifest": "https://raw.githubusercontent.com/fabhianArkantos/Sistema-Hitos-Foundry-VTT/1-fix-names-and-rolls/system.json",
+  "download": "https://github.com/fabhianArkantos/Sistema-Hitos-Foundry-VTT/archive/refs/tags/1-fix-names-and-rolls.zip",
   "license": "LICENSE.txt"
 }
