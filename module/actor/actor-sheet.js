@@ -9,7 +9,7 @@ export class HitosActorSheet extends ActorSheet {
   }
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["hitos", "sheet", "actor"],
       template: "systems/hitos/templates/actor/actor-sheet.html",
       width: 740,
