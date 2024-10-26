@@ -22,7 +22,7 @@ export async function _onInitRoll(actor) {
     let template = "systems/hitos/templates/chat/chat-roll.html";
 
     let dialogData = {
-        title: client.Localization.localize("Hitos.Iniciativa"),
+        title: game.i18n.localize("Hitos.Iniciativa"),
         total: values[2] + corduraMod + resistenciaMod,
         damage: null,
         dices: values[1],
@@ -75,7 +75,7 @@ export async function _onAttackRoll(actor, weapon) {
     let template = "systems/hitos/templates/chat/chat-roll.html";
 
     let dialogData = {
-        title: client.Localization.localize("Hitos.Ataque") + ". " + client.Localization.localize(hitos.weaponKind[weapon.kind]),
+        title: game.i18n.localize("Hitos.Ataque") + ". " + game.i18n.localize(hitos.weaponKind[weapon.kind]),
         total: attack,
         damage: damageTotal,
         dices: values[1],
@@ -108,7 +108,7 @@ export async function _onStatusRoll(actor, status) {
     let template = "systems/hitos/templates/chat/chat-roll.html";
 
     let dialogData = {
-        title: client.Localization.localize(statusLabel),
+        title: game.i18n.localize(statusLabel),
         total: values[2],
         damage: null,
         dices: values[1],
@@ -148,7 +148,7 @@ export async function _onCheckRoll(actor, valor, habilidadNombre) {
             content: html,
             buttons: {
                 normal: {
-                    label: client.Localization.localize("Hitos.Roll.Tirar"),
+                    label: game.i18n.localize("Hitos.Roll.Tirar"),
                     callback: async (html) => {
                         let values = _rolld10(valor);
                         let total =
@@ -159,10 +159,10 @@ export async function _onCheckRoll(actor, valor, habilidadNombre) {
                             values[2];
                         let template = "systems/hitos/templates/chat/chat-roll.html";
                         dialogData = {
-                            title: client.Localization.localize(habilidadNombre),
+                            title: game.i18n.localize(habilidadNombre),
                             total: total,
                             damage: null,
-                            atributo: client.Localization.localize(html[0].querySelectorAll("option:checked")[0].label),
+                            atributo: game.i18n.localize(html[0].querySelectorAll("option:checked")[0].label),
                             dices: values[1],
                             actor: actor._id,
                             mods: Number(valor) + Number(html[0].querySelectorAll("option:checked")[0].value) + Number(html[0].querySelectorAll(".bonus")[0].value) + resistenciaMod + corduraMod,
@@ -202,6 +202,6 @@ function _rolld10(valor) {
 
 function _formatModsTooltip(data) {
     return data.filter(({value}) => value !== 0).map(({value, key}) => {
-        return client.Localization.localize("Hitos." + key) + ": " + value;
+        return game.i18n.localize("Hitos." + key) + ": " + value;
     });
 }

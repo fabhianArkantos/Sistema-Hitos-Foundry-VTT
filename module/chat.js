@@ -70,7 +70,7 @@ async function onDramaRoll(event){
             content: html,
             buttons: {
                 normal: {
-                    label: client.Localization.localize("Hitos.Roll.Tirar"),
+                    label: game.i18n.localize("Hitos.Roll.Tirar"),
                     callback: async (html) => {
                         let selectedDices = html[0].querySelectorAll('.check-dice:checked');
                         let afectar = html[0].querySelectorAll('.check-affect:checked')[0].value;
@@ -88,7 +88,7 @@ async function onDramaRoll(event){
                         let damage = calculateDamage(weaponDamage,weaponKindBonus, dicesNew.sort((a, b) => a - b))
                         let template = "systems/hitos/templates/chat/chat-drama.html";
                         dialogData = {
-                            title: client.Localization.localize("Drama"),
+                            title: game.i18n.localize("Drama"),
                             total: result,
                             damage: damage,
                             dicesOld: dicesOld,

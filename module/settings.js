@@ -1,8 +1,8 @@
 
 export function registerSettings() {
     game.settings.register("hitos", "mentalHealthEnabled", {
-        name: client.Localization.localize("Hitos.EnableMentalHealth"),
-        hint: client.Localization.localize("Hitos.EnableMentalHealthHint"),
+        name: game.i18n.localize("Hitos.EnableMentalHealth"),
+        hint: game.i18n.localize("Hitos.EnableMentalHealthHint"),
         scope: "world",
         config: true,
         type: Boolean,
@@ -10,16 +10,16 @@ export function registerSettings() {
     });
 
     game.settings.register("hitos", "gameModule", {
-        name: client.Localization.localize("Hitos.EnableMentalHealth"),
-        hint: client.Localization.localize("Hitos.EnableMentalHealthHint"),
+        name: game.i18n.localize("Hitos.EnableMentalHealth"),
+        hint: game.i18n.localize("Hitos.EnableMentalHealthHint"),
         scope: "world",
         config: true,
         requiresReload: true,
         type: String,
         choices: {
-            "cultos": client.Localization.localize("Hitos.CultosInnombrables"),
-            "lcdt": client.Localization.localize("Hitos.LasCorrientesDelTiempo"),
-            "core": client.Localization.localize("Hitos.Core")
+            "cultos": game.i18n.localize("Hitos.CultosInnombrables"),
+            "lcdt": game.i18n.localize("Hitos.LasCorrientesDelTiempo"),
+            "core": game.i18n.localize("Hitos.Core")
         },
         default: "cultos",
     });
