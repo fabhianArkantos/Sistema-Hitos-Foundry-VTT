@@ -36,7 +36,7 @@ export class HitosActorSheet extends ActorSheet {
   async _enrichTextFields(data, fieldNameArr) {
     for (let t = 0; t < fieldNameArr.length; t++) {
       if (foundry.utils.hasProperty(data, fieldNameArr[t])) {
-        foundry.utils.setProperty(data, fieldNameArr[t], await TextEditor.enrichHTML(getProperty(data, fieldNameArr[t]), { async: true }));
+        foundry.utils.setProperty(data, fieldNameArr[t], await TextEditor.enrichHTML(foundry.utils.getProperty(data, fieldNameArr[t]), { async: true }));
       }
     };
   }

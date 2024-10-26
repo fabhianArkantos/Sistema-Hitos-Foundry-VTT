@@ -60,22 +60,22 @@ export class HitosActor extends Actor {
     var resistencia_Max = Number(data.aguante.value);
 
     if (resistencia < resistencia_Max) {
-      data.resistencia.status = game.i18n.format("Hitos.Salud.Sano");
+      data.resistencia.status = client.Localization.format("Hitos.Salud.Sano");
       data.resistencia.mod = 0;
     } else if (
       resistencia_Max <= resistencia &&
       resistencia < 2 * resistencia_Max
     ) {
-      data.resistencia.status = game.i18n.format("Hitos.Salud.Herido");
+      data.resistencia.status = client.Localization.format("Hitos.Salud.Herido");
       data.resistencia.mod = -2;
     } else if (
       2 * resistencia_Max <= resistencia &&
       resistencia < 3 * resistencia_Max
     ) {
-      data.resistencia.status = game.i18n.format("Hitos.Salud.Incapacitado");
+      data.resistencia.status = client.Localization.format("Hitos.Salud.Incapacitado");
       data.resistencia.mod = -5;
     } else {
-      data.resistencia.status = game.i18n.format("Hitos.Salud.Moribundo");
+      data.resistencia.status = client.Localization.format("Hitos.Salud.Moribundo");
       data.resistencia.mod = -5;
     }
 
@@ -85,21 +85,21 @@ export class HitosActor extends Actor {
       var estMental_Max = Number(data.entereza.value);
 
       if (estMental < estMental_Max) {
-        data.estabilidadMental.status = game.i18n.format("Hitos.Mental.Cuerdo");
+        data.estabilidadMental.status = client.Localization.format("Hitos.Mental.Cuerdo");
         data.estabilidadMental.mod = 0;
       } else if (estMental_Max <= estMental && estMental < 2 * estMental_Max) {
-        data.estabilidadMental.status = game.i18n.format("Hitos.Mental.Alterado");
+        data.estabilidadMental.status = client.Localization.format("Hitos.Mental.Alterado");
         data.estabilidadMental.mod = -2;
       } else if (
         2 * estMental_Max <= estMental &&
         estMental < 3 * estMental_Max
       ) {
-        data.estabilidadMental.status = game.i18n.format(
+        data.estabilidadMental.status = client.Localization.format(
           "Hitos.Mental.Trastornado"
         );
         data.estabilidadMental.mod = -5;
       } else {
-        data.estabilidadMental.status = game.i18n.format(
+        data.estabilidadMental.status = client.Localization.format(
           "Hitos.Mental.Enloquecido"
         );
         data.estabilidadMental.mod = -5;
